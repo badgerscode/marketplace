@@ -1,0 +1,63 @@
+.checked-photo {
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+}
+
+.uk-cursor-pointer {
+    cursor: pointer;
+}
+
+.uk-border-current::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #04db4e;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.uk-border-current:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #04db4a;
+}
+
+.uk-border-current {
+    color: #04db4e;
+    box-shadow: 0 0 10px #04db4e;
+    text-shadow: 0 0 10px #04db4e;
+}
+
+.uk-border-previous::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* background: blue; */
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.uk-border-previous:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0 0 15px blue; */
+}
+
+.uk-border-previous:hover {
+    color: blue;
+    /* box-shadow: 0 0 15px blue; */
+    /* text-shadow: 0 0 15px blue; */
+}
+
+.micro-font {
+    font-size: 0.775rem;
+}
