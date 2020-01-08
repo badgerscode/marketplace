@@ -1,0 +1,66 @@
+  <div>
+            <!-- <div class="uk-margin-large-top">
+              <h3 class="uk-margin-remove-top uk-text-light uk-text-center">
+                <a class="uk-link-reset uk-text-light">Minha mesa</a>
+              </h3>
+            </div> -->
+
+            <div
+              class="uk-child-width-auto@s uk-flex uk-flex-center uk-margin-large-top"
+              uk-grid
+            >
+              <div>
+                <img
+                  class="uk-border-circle"
+                  width="60"
+                  height="60"
+                  src="https://randomuser.me/api/portraits/women/63.jpg"
+                />
+                <img
+                  class="checked-photo"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3zdaAjFPbgFo_qIykcHwT5SXsfrXxuh1Pz8LMopkRvvRQTk1K"
+                  width="10"
+                  alt=""
+                />
+                <ul class="uk-list uk-list-large">
+                  <li class="uk-link-reset uk-text-light">Julia Maria</li>
+                </ul>
+              </div>
+
+              <div>
+                <img
+                  class="uk-border-circle"
+                  width="60"
+                  height="60"
+                  src="https://randomuser.me/api/portraits/men/11.jpg"
+                />
+                <img
+                  class="checked-photo"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3zdaAjFPbgFo_qIykcHwT5SXsfrXxuh1Pz8LMopkRvvRQTk1K"
+                  width="10"
+                  alt=""
+                />
+                <ul class="uk-list uk-list-large">
+                  <li class="uk-link-reset uk-text-light">Ricardo W.</li>
+                </ul>
+              </div>
+
+              <div>
+                <img
+                  class="uk-border-circle"
+                  width="60"
+                  height="60"
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                />
+                <img
+                  class="checked-photo"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ3zdaAjFPbgFo_qIykcHwT5SXsfrXxuh1Pz8LMopkRvvRQTk1K"
+                  width="10"
+                  alt=""
+                />
+                <ul class="uk-list uk-list-large">
+                  <li class="uk-link-reset uk-text-light">Melissa Lynn</li>
+                </ul>
+              </div>
+            </div>
+          </div>
