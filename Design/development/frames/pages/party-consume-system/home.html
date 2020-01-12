@@ -1,0 +1,512 @@
+<html>
+    <style>
+        html{
+            overflow: auto;
+        }
+        .uk-accordion-title{
+            text-align: center !important;
+        }
+    .value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 11px 0;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.uk-button-success{
+    background-color: #32d296;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.background-theme{
+    background-color: #d51f23;
+}
+.background-transparent{
+    background-color: transparent !important;
+}
+.color-white{
+    color:white !important;
+}
+.height-7{
+    height: 7px;
+}
+.height-30{
+    height: 30px;
+}
+.margin-right-120{
+    margin-right:120px
+}
+.margin-left-120{
+    margin-left:120px
+}
+.uk-navbar-dropdown{
+    padding: 0px 20px !important;
+    width: 300px !important;
+}
+.font-size-12{
+    font-size: 12px !important;
+}
+.badge-num{
+    position: relative !important;
+    bottom: 1px !important;
+    margin-left: 5px !important;
+    font-size: 12px !important;
+}
+.empty-cart-li{
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.menu-bellow{
+    position: relative;
+    bottom: 20px;
+}
+.uk-navbar-nav>li>a {
+    text-transform: capitalize !important
+}
+.product-title{
+    position: relative;
+    top: 10px;
+}
+</style>
+    <head>
+        <link href="../../assets/css/frameworks/uikit-3.2.6/uikit.min.css"
+            rel="stylesheet">
+        <title>Home Page</title>
+    </head>
+
+    <body>
+        <div class="uk-card uk-width-1 background-theme height-7"></div>
+        <nav class="uk-navbar-container background-transparent" uk-navbar>
+            <div class="uk-navbar-left margin-left-120">
+
+                <ul class="uk-navbar-nav">
+                    <li><a href="#" uk-icon="icon: menu"></a></li>
+                </ul>
+            </div>
+            <div class="uk-navbar-center">
+                <a class="uk-navbar-item uk-logo" href="#"><img
+                        src="assets/logo.png" alt="logo" width="35px"></a>
+            </div>
+
+            <div class="uk-navbar-right margin-right-120">
+
+                <ul class="uk-navbar-nav">
+                    <li><a href="#" uk-icon="icon: search"></a></li>
+                    <li><a href="#" uk-icon="icon: user"></a></li>
+                    <li><a href="#" uk-icon="icon: cart"></a> <div
+                            class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-text-center font-size-12
+                                    uk-text-bolder"><a href="#"><span>Minha
+                                            Sacola de Compras
+                                        </span> <span class="uk-badge
+                                            badge-num">0</span></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li class="empty-cart-li"><a href="#">NÃO
+                                            EXISTEM PRODUTOS EM SUA SACOLA
+                                            DE COMPRAS</a></li>
+                                </ul>
+                            </div></li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="uk-navbar-container background-transparent menu-bellow"
+                uk-navbar>
+                <div class="uk-navbar-center">
+
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a><p class="tm-heading-fragment">Home</p></a></li>
+                        <li>
+                            <a><p class="tm-heading-fragment">Meus Cartões</p></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Ver</a></li>
+                                    <li><a href="#">Adicionar</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a><p class="tm-heading-fragment">Cardápio</p></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+            <div class="uk-container uk-container-large">
+                <div class="uk-child-width-1-3@lg uk-child-width-1-3@m
+                    uk-child-width-1-2@s" uk-grid>
+                    <div>
+                        <div class="uk-card uk-width-1 background-theme
+                            uk-text-center color-white
+                            height-30">
+                            <h4 class="color-white">Evento</h4>
+                        </div>
+                        <img style="width:100%"
+                            src="https://vamoapp.s3.amazonaws.com/prod/event/flyer/2705-1519257477927.jpg"
+                            alt="">
+                    </div>
+                    <div>
+                        <div class="uk-card uk-width-1 background-theme
+                            uk-text-center color-white
+                            height-30">
+                            <h4 class="color-white">Bebidas c/ álcool </h4>
+                        </div>
+                        <ul uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title
+                                    uk-margin-medium-left" href="#"><h4>Cervejas</h4></a>
+                                <div class="uk-accordion-content">
+                                    <div class="uk-child-width-1-2@m
+                                        uk-text-center"
+                                        uk-grid>
+                                        <div>
+                                            <div class="uk-card
+                                                uk-card-default
+                                                uk-card-body"
+                                                style="padding: 0px;">
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body
+                                                    uk-margin-small-bottom"
+                                                    style="padding:0">
+                                                    <div
+                                                        class="uk-margin-small-top
+                                                        product-title">
+                                                        <div>
+                                                            <h4
+                                                                class="uk-margin-remove-top
+                                                                uk-margin-remove-bottom">Budwieser</h4>
+                                                        </div>
+                                                        <div
+                                                            style="text-align:
+                                                            right;
+                                                            padding-right:
+                                                            15px;">
+                                                            <span
+                                                                class="uk-badge
+                                                                badge-num
+                                                                uk-margin-medium-left">550ml
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <img
+                                                        src="https://emporiodacerveja.vteximg.com.br/arquivos/ids/172575-300-300/1bud.jpg?v=636783919258830000"
+                                                        width="150">
+                                                </div>
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body"
+                                                    style="padding:
+                                                    10px;">
+
+                                                    <h4 class="uk-text-bold
+                                                        uk-margin-small-bottom">R$
+                                                        15.99</h4>
+                                                    <form>
+                                                        <div
+                                                            class="value-button"
+                                                            id="decrease"
+                                                            onclick="decreaseValue()"
+                                                            value="Decrease
+                                                            Value">-</div>
+                                                        <input type="number"
+                                                            id="number"
+                                                            value="0" />
+                                                        <div
+                                                            class="value-button"
+                                                            id="increase"
+                                                            onclick="increaseValue()"
+                                                            value="Increase
+                                                            Value">+</div>
+                                                    </form>
+                                                    <button class="uk-button
+                                                        uk-button-success">Adicionar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card
+                                                uk-card-default
+                                                uk-card-body"
+                                                style="padding: 0px;">
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body
+                                                    uk-margin-small-bottom"
+                                                    style="padding:0">
+                                                    <div
+                                                        class="uk-margin-small-top
+                                                        product-title">
+                                                        <h4
+                                                            class="uk-margin-remove-top
+                                                            uk-margin-remove-bottom">Stella
+                                                            Artois</h4>
+                                                        <div
+                                                            style="text-align:
+                                                            right;
+                                                            padding-right:
+                                                            15px;">
+                                                            <span
+                                                                class="uk-badge
+                                                                badge-num
+                                                                uk-margin-medium-left">550ml</span>
+                                                        </div>
+                                                    </div>
+                                                    <img
+                                                        src="https://emporiodacerveja.vteximg.com.br/arquivos/ids/162311-300-300/stella-550.jpg?v=636155169451900000"
+                                                        width="150">
+                                                </div>
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body"
+                                                    style="padding:
+                                                    10px;">
+
+                                                    <h4 class="uk-text-bold
+                                                        uk-margin-small-bottom">R$
+                                                        15.99</h4>
+                                                    <form>
+                                                        <div
+                                                            class="value-button"
+                                                            id="decrease"
+                                                            onclick="decreaseValue()"
+                                                            value="Decrease
+                                                            Value">-</div>
+                                                        <input type="number"
+                                                            id="number"
+                                                            value="0" />
+                                                        <div
+                                                            class="value-button"
+                                                            id="increase"
+                                                            onclick="increaseValue()"
+                                                            value="Increase
+                                                            Value">+</div>
+                                                    </form>
+                                                    <button class="uk-button
+                                                        uk-button-success">Adicionar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div>
+                        <div class="uk-card background-theme
+                            uk-text-center color-white
+                            height-30">
+                            <h4 class="color-white">Bebidas s/ álcool </h4>
+                        </div>
+                        <ul uk-accordion>
+                            <li class="uk-open">
+                                <a class="uk-accordion-title
+                                    uk-margin-medium-left" href="#"><h4>Águas</h4></a>
+                                <div class="uk-accordion-content">
+                                    <div class="uk-child-width-1-2@m
+                                        uk-text-center"
+                                        uk-grid>
+                                        <div>
+                                            <div class="uk-card
+                                                uk-card-default
+                                                uk-card-body"
+                                                style="padding: 0px;">
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body
+                                                    uk-margin-small-bottom"
+                                                    style="padding:0">
+                                                    <div
+                                                        class="uk-margin-small-top
+                                                        product-title">
+                                                        <h4
+                                                            class="uk-margin-remove-top
+                                                            uk-margin-remove-bottom">S/
+                                                            Gás</h4>
+                                                        <div
+                                                            style="text-align:
+                                                            right;
+                                                            padding-right:
+                                                            15px;">
+                                                            <span
+                                                                class="uk-badge
+                                                                badge-num
+                                                                uk-margin-medium-left">250ml</span>
+                                                        </div>
+                                                    </div>
+                                                    <img
+                                                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEQ8SEBAVFRATEBMYFhEVFRUTGRISFhUWFxUWFhMYHCggGBoxGxMXIjEiJik3Li4uFx8zODMsNygtLisBCgoKDg0OGxAQGyseICUvLzUtLS03Ky0vLS0wLTU3LTI3Ny8rNzctLzUtLTctLS0wNS0tLS4tLSstLS4vLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABAUBAwYCB//EAD0QAAIBAgIHBAcGBAcAAAAAAAABAgMRBCEFEiIxQVFhBnGBkRMyUqGxwdEzYnKSsvAjQnPCJCU0Q1Rjgv/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgQFA//EACgRAQEAAgEDAgUFAQAAAAAAAAABAhEDBBIxEyFRcZGx0TJSYYHwBf/aAAwDAQACEQMRAD8A+4gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAq+0lZxoScZNNySunZ2fU4WvU1ndu/Hu6Z/vM6eHp/Um96cXU9bOHLt1t9NTMnyqU82+N3nx80df2IxM5RrqU5SUZRtrNu1072vuWRrl6Xsx7t7fLp/wDozl5Jx9ut/wAumAByPSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAUfa6uo0YKVtqrFXk7JWTeb8Dj8StWTUXGWe9JNO+/V35ZnZ9qsHCpQbqJPUlFx1s4qTkldwezLe964mlaNo7LjJ21V6sml4KLsjp4ufsmtOHqOk9XK23TjHSbbaVu9X4W32R0PYPELXxFNWdowd0+Tle/5kXKwlJJ60nu4yb+LI3ZbB0069SFtb0uq3GyUkoRa1oxybzee/M3ydT34XGx8uHoPT5JnMvH4dCADjemAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABF0jXcY2j60sl05sCu0rW9JL0azhF7X3pLd4HqmuCeR6wuGsszbGnw4GmWqrFkfBy9DNv8Akm1rdHwkTK9KV0tbJdPfe/yPM6OWZRapgrtF199J74+r1jy8PoWJhoAAAAAAAAAAAAAAAAAAAAAAAAAAAAACt9ecpcFkidiJWjN8ot+4haNS1VzLErfLcarmyuzxBlHrVvncy0ZjI2WQFZi9lxqR3xfmuK8i4jK6TW5q/gV+NirPPgbtEzvSh0uvJtL3CkSwAZUAAAAAAAAAAAAAAAAAAAAAAAAAAGnGO1Oo/uS+DOLo6Zqaidlfx+p2mMjenUS3uEvgz55TwtVU0kpXtus7+TOjgksu3D1eeWOU1b4vhHxPaWupb4LuV8vMxS7S4luykm3uSgm34GqGjKrqRjXrU6Tm9mNScIzmt2zDe/E6LRVChB2oVaNSbjdy11KTWTbsr5bSfiuZ15ZcWM/TK8ni4ur5c/15Yz+fP0214SWOkr3hHo4pv3fUziMRjKeclCS4uMX79xIxmn6NOM5PEUGowU3GM1KTi7arUU873Vu9EhaWpOyWIw+1FOKdSOcZNJO1883Y5u6+e2a+T0/QmtTky381YtM1JQb2e6z+p1HZqrrYalJpJvWvbpOS+RxVepGUfSU01Tqxk0na6ak4vd1izsOyP+jod0v1yLz44zDcmvdjpM+T1u3K79r94uAAcj1AAAAAAAAAAAAAAAAAAAAAAAAAAAa8RPVhOXKLfkjkafahaqap7P4s/gdVpD7Kt/Tn+lnxV4xKkrX3cd9up0cHHjlvbl6jPPGztdTTxirYupOi8O/TKkpQxKkpU/Rt/ZWWrO6d7XTTzI2M0DVp4bB0KMNWvTTjLEU1eLhWUoYhuWTWy9a74xilwPn2JxrbbTfidFoLt9Vo2hW/i0t2b2kuknvXR+aOvLjs98Po4cOe265Z/c/32dDiuzc28RTo1KNOjVpzhGOtKWtNxjGm3Bxfo5bKu4yz9lG2roKtJ1Ip4W1Wrh6spbetTnT9EpU4PVzjs5N+08s7lno/tRgKsVKNanTeWzU1aTi+95PwZG0r2xwNBNwnGtU3qFK07u/Gr6sc+t+h8O7k3rVdcmGt7iPpOg6FChRnKLqRjVbcb2tKpJx3rq/I6/sZK+Bwz+4/1SPlNbS863pKtV7c+C3QivViui+bZ9T7DP8Ay/Cf0/7mXnxuPHN/F8+nm+e5Txr8L0AHE9EAAAAAAAAAAAAAAAAAAAAAAAAAAGrFrYnu9SW/du49DntGaMpai/w0JLrGPzOgxcb06i5wl8GQdFz2Eaxtk9mcsZb7q3EdncO83gqS62gzFHs1hOOFpfkh9S6niFwu+6LfvtYzCv8A9c/JfG5rvy+LHo8f7Z9IqZ9msJ/w6fdqwNa0Bhk8sFTb/DT+p0qQbHqZfGno8f7Z9I5vEaKo6j/wkI5co/IttB09WhSikkkslHcld2PWMkrOzW5nrRa/hQ8fe2S5Wz3axwxl9olgAw2AAAAAAAAAAAAAAAAAAAAAAAAAADDRR4Dck+DslzfN89xelLSjtzs1syfDvNRKnzlaybzfv7keo1LL95miFOybtm+fLhdmyC3d4GyU00nn3JtfA8wpRf8AtrxSM04pN33PPufH6+Zsqxdtl6rXRMioOkbKMsluJuCX8Onb2F70VelKj1Xz/fAt6MbRiuSXwLUj2ADKgAAAAAAAAAAAAAAAAAAAAAAAAAAFLD7Sr1nbznYuihoStUqytl6R7uanle/DIsSrKdVOTjxSTfS918veYjJdOHy+pqVNXc0oq6XLfxt5L3mmrCTb1bZ71K9u9NbmWCZJq6u3f2eD8DdUi7ZOzbWas7eZGoRk7a7Vluirvzk9/kb3rXdmrcE9z73vTJRV6YerZvms+edmn5l4UmlZa0HlZ6ssnwccmi6i8l3CkZABFAAAAAAAAAAAAAAAAAAAAAAAAAAAKTRrltPVbvJuyy3vqXM3ZN9GVei6eyrr5W7ixEqU423arfNW9+4iOtGLzTs1vSbXHe1uJNdNerNd01fyazIUKrvnT8YSi0799n7ixKlYaupO0bu2bdnbok3vfcSJ1f5VnL3Jc2+BWtp3etVXRQk/7WbqEM1Zzb+9Cp57TUb9bCwlaNIwe3biqjX5FBX8rlvhXeEHzhH4Ffi6T1Xm883JtNv5LwJmjn/Cp/ht5ZfIXws8pIAMqAAAAAAAAAAAAAAAAAAAAAAAAAADVifUn+CXwK/R2HTir/IsqsbxkuafwK7BTtFc0yxK3V8PZbDjHL2E/oRU5LfFS/C7Pyl9SZKdzzGBUa6eKh/Ns/jTivzPJ+ZJgoyWzLxjL9oxTMunB5uMX1aTJVRsZTaT22+/V+hv0V9lD/1+pmjEWSdkllwSRKwEbU4Lp8Xct8E8pAAMqAAAAAAAAAAAAAAAAAAAAAAAAAAAUOOhKnKUlnG92uj4ruL4Fl0lilw+Ii0S6NVN2W8lPDw9iPkjMKEU7xik+aVi7NItWpqpa3Ej1MauZZ1KUZetFPvVzysND2I/lRNmlFQlOq2o5JO17b+fgdDFWSXIJcjItJAAEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf/9k="width="150">
+                                                </div>
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body"
+                                                    style="padding:
+                                                    10px;">
+
+                                                    <h4 class="uk-text-bold
+                                                        uk-margin-small-bottom">R$
+                                                        12.99</h4>
+                                                    <form>
+                                                        <div
+                                                            class="value-button"
+                                                            id="decrease"
+                                                            onclick="decreaseValue()"
+                                                            value="Decrease
+                                                            Value">-</div>
+                                                        <input type="number"
+                                                            id="number"
+                                                            value="0" />
+                                                        <div
+                                                            class="value-button"
+                                                            id="increase"
+                                                            onclick="increaseValue()"
+                                                            value="Increase
+                                                            Value">+</div>
+                                                    </form>
+                                                    <button class="uk-button
+                                                        uk-button-success">Adicionar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-card
+                                                uk-card-default
+                                                uk-card-body"
+                                                style="padding: 0px;">
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body
+                                                    uk-margin-small-bottom"
+                                                    style="padding:0">
+                                                    <div
+                                                        class="uk-margin-small-top
+                                                        product-title">
+                                                        <h4
+                                                            class="uk-margin-remove-top
+                                                            uk-margin-remove-bottom">C/
+                                                            Gás</h4>
+                                                        <div
+                                                            style="text-align:
+                                                            right;
+                                                            padding-right:
+                                                            15px;">
+                                                            <span
+                                                                class="uk-badge
+                                                                badge-num
+                                                                uk-margin-medium-left">250ml</span>
+                                                        </div>
+                                                    </div>
+                                                    <img
+                                                        src="data:image/jpeg;base64,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"
+                                                        width="150">
+                                                </div>
+                                                <div class="uk-card
+                                                    uk-card-default
+                                                    uk-card-body"
+                                                    style="padding:
+                                                    10px;">
+
+                                                    <h4 class="uk-text-bold
+                                                        uk-margin-small-bottom">R$
+                                                        12.99</h4>
+                                                    <form>
+                                                        <div
+                                                            class="value-button"
+                                                            id="decrease"
+                                                            onclick="decreaseValue()"
+                                                            value="Decrease
+                                                            Value">-</div>
+                                                        <input type="number"
+                                                            id="number"
+                                                            value="0" />
+                                                        <div
+                                                            class="value-button"
+                                                            id="increase"
+                                                            onclick="increaseValue()"
+                                                            value="Increase
+                                                            Value">+</div>
+                                                    </form>
+                                                    <button class="uk-button
+                                                        uk-button-success">Adicionar</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <script
+                src="../../assets/js/frameworks/uikit-3.2.6/uikit.min.js"></script>
+            <script
+                src="../../assets/js/frameworks/uikit-3.2.6/uikit-icons.min.js"></script>
+            <script>
+                function increaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number').value = value;
+}
+
+function decreaseValue() {
+  var value = parseInt(document.getElementById('number').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number').value = value;
+}
+                </script>
+        </body>
+
+    </html>
